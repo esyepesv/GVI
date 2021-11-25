@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/principal.css">
     <title>Welcome</title>
     <style>
 
@@ -12,16 +13,15 @@
   </head>
   <body class="text-center">
           <div class="contenedor">
-            <h1>Página de Inicio</h1>
+            <h3>Página de Inicio</h3>
             <% if (login) { %>
-                <h1>Usuario conectado: <strong><%= name %></strong></h1>
-
+                <h3>Usuario conectado:<%= name %></h3>
 
                 <a href="continue" class="a-logout">Continuar</a>
 
                 <a href="logout" class="a-logout">Exit</a>
             <%} else { %>
-                <h1><strong><%= name %></strong></h1>
+                <h3><strong><%= name %></strong></h3>
                 <a href="login" class="a-login">Ir a Login</a>
             <% } %>
           </div>
